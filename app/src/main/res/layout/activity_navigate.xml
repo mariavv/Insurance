@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.navigate.NavigateActivity">
+
+    <ImageView
+        android:id="@+id/avatar_iv"
+        android:layout_width="@dimen/avatar_size"
+        android:layout_height="@dimen/avatar_size"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/round_outline"
+        android:contentDescription="@string/avatar_contentDescription"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/oval" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="8dp"
+        android:lineSpacingExtra="0sp"
+        android:textColor="#465057"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/avatar_iv"
+        app:layout_constraintLeft_toRightOf="@id/avatar_iv"
+        tools:text="Андрей Рубцов" />
+
+    <ImageView
+        android:id="@+id/info_iv"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/avatar_contentDescription"
+        android:src="@drawable/info"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--todo убрать include-->
+    <include
+        layout="@layout/main_menu_tabs_containier"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="@dimen/main_bottom_bar_height" />
+
+    <LinearLayout
+        android:id="@+id/bottomBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_bottom_bar_height"
+        android:background="@android:color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/bottomBarMainTv"
+            style="@style/BottomBarItem"
+            android:drawableTop="@drawable/icon_home"
+            android:text="@string/bottom_bar_main" />
+
+        <TextView
+            android:id="@+id/polyciesTv"
+            style="@style/BottomBarItemWithoutFirst"
+            android:drawableTop="@drawable/icon_polices"
+            android:text="@string/bottom_bat_polices" />
+
+        <TextView
+            style="@style/BottomBarItemWithoutFirst"
+            android:drawableTop="@drawable/icon_chat"
+            android:text="@string/bottom_bar_chat" />
+
+        <TextView
+            style="@style/BottomBarItemWithoutFirst"
+            android:drawableTop="@drawable/icon_incident"
+            android:text="@string/bottom_bar_incident" />
+
+        <TextView
+            android:id="@+id/moreTv"
+            style="@style/BottomBarItemWithoutFirst"
+            android:drawableTop="@drawable/icon_polices_2"
+            android:text="@string/bottom_bar_more" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

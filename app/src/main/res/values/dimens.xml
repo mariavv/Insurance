@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_bottom_bar_height">56dp</dimen>
+    <dimen name="main_bottom_bat_text_size">12sp</dimen>
+    <dimen name="avatar_size">28dp</dimen>
+    <dimen name="margin_start">40dp</dimen>
+    <dimen name="big_image_margin_inside">41dp</dimen>
+    <dimen name="round_size">40dp</dimen>
+    <dimen name="action_desc_margin_top">4dp</dimen>
+</resources>

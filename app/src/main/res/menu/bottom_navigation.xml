@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_main"
+        android:icon="@drawable/icon_home"
+        android:title="@string/bottom_bar_main" />
+    <item
+        android:id="@+id/action_policies"
+        android:icon="@drawable/icon_polices"
+        android:title="@string/bottom_bat_polices" />
+    <item
+        android:id="@+id/action_incident"
+        android:icon="@drawable/icon_chat"
+        android:title="@string/bottom_bar_incident" />
+    <item
+        android:id="@+id/action_chat"
+        android:icon="@drawable/icon_incident"
+        android:title="@string/bottom_bar_chat" />
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/icon_polices_2"
+        android:title="@string/bottom_bar_more" />
+</menu>

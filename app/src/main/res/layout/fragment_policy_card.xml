@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.main.cards.PolicyCardFragment">
+
+    <ImageView
+        android:id="@+id/big_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/bitmap"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="44dp"
+        android:lineSpacingExtra="2sp"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/big_image"
+        app:layout_constraintTop_toTopOf="@id/big_image"
+        tools:text="ДМС «Приемиум»" />
+
+    <TextView
+        android:id="@+id/balance_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:lineSpacingExtra="0sp"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@id/big_image"
+        app:layout_constraintTop_toBottomOf="@id/title_tv"
+        tools:text="48 624,24 ₽" />
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/big_image_margin_inside"
+        android:layout_marginBottom="4dp"
+        android:lineSpacingExtra="4sp"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/balance_tv"
+        app:layout_constraintRight_toRightOf="@id/big_image"
+        tools:text="до 12.02.2019" />
+
+    <ImageView
+        android:id="@+id/note_round_iv"
+        android:layout_width="@dimen/round_size"
+        android:layout_height="@dimen/round_size"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/oval42fcfeff"
+        android:contentDescription="@string/contentDescription"
+        app:layout_constraintBottom_toBottomOf="@id/call_doc_round_iv"
+        app:layout_constraintRight_toLeftOf="@id/call_doc_round_iv" />
+
+    <ImageView
+        android:id="@+id/note_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/icon_note"
+        app:layout_constraintBottom_toBottomOf="@id/note_round_iv"
+        app:layout_constraintLeft_toLeftOf="@id/note_round_iv"
+        app:layout_constraintRight_toRightOf="@id/note_round_iv"
+        app:layout_constraintTop_toTopOf="@id/note_round_iv" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/action_desc_margin_top"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/note"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/note_round_iv"
+        app:layout_constraintRight_toRightOf="@id/note_round_iv"
+        app:layout_constraintTop_toBottomOf="@id/note_round_iv" />
+
+    <ImageView
+        android:id="@+id/call_doc_round_iv"
+        android:layout_width="@dimen/round_size"
+        android:layout_height="@dimen/round_size"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/oval42fcfeff"
+        android:contentDescription="@string/contentDescription"
+        app:layout_constraintBottom_toBottomOf="@id/big_image"
+        app:layout_constraintLeft_toLeftOf="@id/big_image"
+        app:layout_constraintRight_toRightOf="@id/big_image" />
+
+    <ImageView
+        android:id="@+id/call_doc_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/icon_call_doc"
+        app:layout_constraintBottom_toBottomOf="@id/call_doc_round_iv"
+        app:layout_constraintLeft_toLeftOf="@id/call_doc_round_iv"
+        app:layout_constraintRight_toRightOf="@id/call_doc_round_iv"
+        app:layout_constraintTop_toTopOf="@id/call_doc_round_iv" />
+
+    <TextView
+        android:id="@+id/call_doc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/action_desc_margin_top"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/call_doc"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/call_doc_round_iv"
+        app:layout_constraintRight_toRightOf="@id/call_doc_round_iv"
+        app:layout_constraintTop_toBottomOf="@id/call_doc_round_iv" />
+
+    <ImageView
+        android:id="@+id/ambulance_round_iv"
+        android:layout_width="@dimen/round_size"
+        android:layout_height="@dimen/round_size"
+        android:layout_marginStart="56dp"
+        android:background="@drawable/oval42fcfeff"
+        android:contentDescription="@string/contentDescription"
+        app:layout_constraintBottom_toBottomOf="@id/call_doc_round_iv"
+        app:layout_constraintLeft_toRightOf="@id/call_doc_round_iv" />
+
+    <ImageView
+        android:id="@+id/ambulance_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/contentDescription"
+        android:src="@drawable/icon_ambulance"
+        app:layout_constraintBottom_toBottomOf="@id/ambulance_round_iv"
+        app:layout_constraintLeft_toLeftOf="@id/ambulance_round_iv"
+        app:layout_constraintRight_toRightOf="@id/ambulance_round_iv"
+        app:layout_constraintTop_toTopOf="@id/ambulance_round_iv" />
+
+    <TextView
+        android:id="@+id/ambulance_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/action_desc_margin_top"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/ambulance"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="@id/ambulance_round_iv"
+        app:layout_constraintRight_toRightOf="@id/ambulance_round_iv"
+        app:layout_constraintTop_toBottomOf="@id/ambulance_round_iv" />
+
+</android.support.constraint.ConstraintLayout>

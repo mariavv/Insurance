@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Insurance</string>
+    <string name="main_bottom_bar_main">Главная</string>
+    <string name="bottom_bar_main">Главная</string>
+    <string name="bottom_bat_polices">Полисы</string>
+    <string name="bottom_bar_chat">Чат</string>
+    <string name="bottom_bar_incident">Инцидент</string>
+    <string name="bottom_bar_more">Еще</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info">Информация</string>
+    <string name="avatar_contentDescription">аватар</string>
+    <string name="polyce_type_icon">Иконка типа полиса</string>
+    <string name="policy_detail">Детали полиса</string>
+    <string name="balance">баланс</string>
+    <string name="to">до</string>
+    <string name="contentDescription">no description</string>
+    <string name="policy_not_found">Полис не найден</string>
+    <string name="ambulance">Скорая</string>
+    <string name="call_doc">Вызов</string>
+    <string name="note">Запись</string>
+</resources>
